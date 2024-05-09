@@ -9,58 +9,28 @@ body {
   margin: 0;
 }
 
-
-.content {
-  padding-top: 60px;
+.column {
+  float: left;
+  width: 50%;
 }
 
 /* Clear floats after the columns */
-section::after {
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
-/*Navigation bar */
-#navbar {
-  position: fixed;
-  z-index: 1;
-  overflow: hidden;
+.container_img {
+  height: 100%;
   width: 100%;
-  background-color: #333;
-}
+  object-fit: cover;
+} 
 
-#navbar #nav-links a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  padding: 20px;
-}
-
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
-    height: auto;
   }
 }
+
