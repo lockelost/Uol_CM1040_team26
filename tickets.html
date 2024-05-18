@@ -2,20 +2,234 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Homepage</title>
-    <meta name="description" content="Homepage of Spy amusement park" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="StyleSheet/style.css" />
-    <script src="index.js" async defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Gill Sans, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(Images/starbg.jpeg);
+            color: #A3FFD6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        /* Header Styles */
+        #navbar {
+            background-color: #474F7A;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #homelogo img {
+            height: 50px;
+        }
+
+        #nav-links a {
+            color: #A3FFD6;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* Main Content Styles */
+        
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+
+        .centered {
+          font-family: Gill Sans, sans-serif;
+          font-size: 35px;
+          color: #A3FFD6;
+          text-shadow: 0 5px 10px rgba(0, 0, 0, 100);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-150%,-50%);
+        }
+        
+        #content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .half-width {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ticket-info {
+            padding: 20px;
+            background-color: #474F7A;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #1F2544;
+            border-radius: 20px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-color: #474F7A;
+            border-radius: 20p;
+            
+        }
+
+        .ticket-section {
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .site-footer {
+            background-color: #474F7A;
+            font-family: Gill Sans, sans-serif;
+            color: #A3FFD6;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        .site-footer p {
+            font-family: Gill Sans, sans-serif;
+            margin: 0;
+        }
+
+        #slider-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #slider img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Gift Voucher Section */
+        .gift-voucher {
+            padding: 20px;
+            background-image: url(Images/starbg.jpeg);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 20px;
+            background-image: url(Images/starbg.jpeg);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* FAQ Accordion */
+        .question {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            background-color: #474F7A;
+            color: #A3FFD6;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #0f051c;
+        }
+
+        .answer.show {
+            display: block;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
     <nav id="navbar">
-        <div id="homelogo-area">
+        <div id="homelogo">
             <a href="index.html">
-                <img id="homelogo" src="Images/parklogo.jpg" alt="Home Logo" />
+                <img src="Images/parklogo.jpg" alt="Home Logo">
             </a>
         </div>
 
@@ -25,47 +239,238 @@
         </div>
     </nav>
 
-    <div class="content">
-        <div class="section">
-            <div id="singleprice">
-                <h3>Single</h3>
-                <tr>
-                    <th>Age</th><th>Cost</th>
-                </tr>
-                <tr>
-                    <td>0-10</td><td>$5</td>
-                </tr>
-                <tr>
-                    <td>11-16</td><td>$8</td>
-                </tr>
-                <tr>
-                    <td>17-55</td><td>$10</td>
-                </tr>
-                <tr>
-                    <td>55+</td><td>$5</td>
-                </tr>
+    <div id="content">
+        <div class="container">
+            <img src="Images/ticketspromoimage.jpg" alt="Ticket promo" style="width: 100%">
+            <div class="centered"><b>TICKETS</b></div>
+        </div>
+
+
+        <div class="flex-container">
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="single-price ticket-section">
+                        <h3>Single</h3>
+                        <table>
+                            <tr>
+                                <th>Age</th>
+                                <th>Cost</th>
+                            </tr>
+                            <tr>
+                                <td>0-10</td>
+                                <td>$5</td>
+                            </tr>
+                            <tr>
+                                <td>11-16</td>
+                                <td>$8</td>
+                            </tr>
+                            <tr>
+                                <td>17-55</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr>
+                                <td>55+</td>
+                                <td>$5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div id="groupprice">
-                <h3>Group</h3>
-                <tr>
-                    <th>Number of members</th>th>Cost</th>
-                </tr>
-                <tr>
-                    <td>0-5</td><td>$7</td>
-                </tr>
-                <tr>
-                    <td>5-10</td><td>$6.5</td>
-                </tr>
-                <tr>
-                    <td>10+</td><td>$6</td>
-                </tr>
+
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="group-price ticket-section">
+                        <h3>Group</h3>
+                        <table>
+                            <tr>
+                                <th>Number of Members</th>
+                                <th>Cost per Person</th>
+                            </tr>
+                            <tr>
+                                <td>0-5</td>
+                                <td>$7</td>
+                            </tr>
+                            <tr>
+                                <td>5-10</td>
+                                <td>$6.5</td>
+                            </tr>
+                            <tr>
+                                <td>10+</td>
+                                <td>$6</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="single-day-ticket ticket-section">
+                        <h3>Single Day Ticket</h3>
+                        <ul>
+                            <li>Experience up to 10 rides in a day!</li>
+                            <li>Save up to $2 when you book in advance</li>
+                            <li>Pre-book for guaranteed entry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="multi-day-ticket ticket-section">
+                        <h3>Multi Day Ticket</h3>
+                        <ul>
+                            <li>Enjoy 2-3 days of thrilling rides!</li>
+                            <li>Access to events on select days</li>
+                            <li>Pre-book for guaranteed entry</li>
+                            <li>Flexible days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket-info">
+            <div class="education ticket-section">
+                <h3>We can make it a learning experience too!</h3>
+                <p>If you are traveling as an educational group or youth group, you can choose to go with the educational pack, where you along with your group will have a personal tour guide and can avail of our educational concessions!</p>
+                <table>
+                    <tr>
+                        <th>Group Size</th>
+                        <th>Price per Person</th>
+                    </tr>
+                    <tr>
+                        <td>5-15</td>
+                        <td>$9</td>
+                    </tr>
+                    <tr>
+                        <td>15-30</td>
+                        <td>$7</td>
+                    </tr>
+                    <tr>
+                        <td>30+</td>
+                        <td>$5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="short-trip ticket-section">
+                        <h3>Short Trip</h3>
+                        <ul>
+                            <li>2-night stay</li>
+                            <li>Complimentary buffet breakfast and dinner</li>
+                            <li>Free parking and wifi</li>
+                            <li>Experience unlimited number of rides, with special discount on select rides</li>
+                            <li>Access to special events on select days</li>
+                            <li>15% discount on gift shops and restaurants/cafes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="vip-pass ticket-section">
+                        <h3>VIP Pass</h3>
+                        <p>With our VIP passes, you can avail of exclusive behind-the-scenes look at some of the inner workings of our rides, as well as always being the first in line for any ride! Additionally, you can also choose to have a special VIP host to help show you around.</p>
+                        <p>Price: $110 / year</p>
+                        <p>Renewal: $95 / year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="annual-pass ticket-section">
+                        <h3>Annual Pass</h3>
+                        <p>Get access to a whole YEAR'S worth of rides and thrills with up to 5 friends and family members! Enjoy a whopping 20% discount on your stay at our hotels and at all restaurants, cafes, and gift shops, along with free parking.</p>
+                        <p>Price: $90 / year</p>
+                        <p>Renewal: $85 / year</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="half-width">
+                <div class="ticket-info">
+                    <div class="student-pass ticket-section">
+                        <h3>Student Pass</h3>
+                        <p>Are you a broke college student but still wanna take that trip to our park? Don't worry, we got you covered!</p>
+                        <p>Students can now avail of reduced prices with our student passes. All you have to do is bring some proof of Student ID (even a school email is fine) and you're good to go!</p>
+                        <p>You can avail of up to 40% off on adult ticket prices per person and even get special discounts on certain events, our hotels, and our stores!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="flex-container">
+            <div class="half-width">
+                <div class="ticket-info gift-voucher">
+                    <h3>Gift Voucher</h3>
+                    <p>Enter your gift voucher code below:</p>
+                    <input type="text" placeholder="Enter your voucher code">
+                    <button>Check Voucher</button>
+                </div>
+            </div>
+
+            <div class="half-width">
+                <div class="ticket-info faq">
+                    <h3>FAQ</h3>
+                    <div class="dropdown">
+                        <button class="question">How do I purchase tickets?</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="question">Are there discounts for seniors?</button>
+                        <div class="answer">
+                            <p>Yes, seniors aged 55 and above are eligible for a discounted ticket price of $5.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="question">Can I bring outside food?</button>
+                        <div class="answer">
+                            <p>Outside food is not allowed inside the park. However, we have a variety of dining options available within the park.</p>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="question">Is parking free?</button>
+                        <div class="answer">
+                            <p>Yes, parking is free for all visitors.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-
     <footer class="site-footer">
+        <p>&copy; 2024 Space Theme Park. All rights reserved.</p>
     </footer>
+
+    <script>
+        const questions = document.querySelectorAll(".question");
+        questions.forEach(question => {
+            question.addEventListener("click", function () {
+                const answer = this.nextElementSibling;
+                answer.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 
 </html>
+
