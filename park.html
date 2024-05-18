@@ -8,7 +8,9 @@
     <meta name="description" content="Homepage of Spy amusement park" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="StyleSheet/style.css" />
-    <script src="index.js" async defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,24 @@
             <!-- Jeff maybe instead of a pop up box i suggested, we can do a easy verison, map on the left and img on the right
             click the dot and the img pop on the right, or something similar to the book shop demo from course slides-->
             <div class="column">
-                <img src="./Images/parkmap.jpg" class="container_img" />
+                <img src="./Images/parkmap.jpg" class="container_img" width= "1400" height= "1000" usemap="#localMap">
+                <map name="localMap">
+                    <area shape="circle" coords="250,800,200" alt="Space Duck Slide" href="#duck">
+                    <area shape="circle" coords="515,575,80" alt="Space 8 Swirl" href="#space8">
+                    <area shape="circle" coords="325,550,70" alt="Star Dust Sand Pit" href="#sand">
+                    <area shape="circle" coords="240,360,150" alt="Space Cruise Havana" href="#cruise">
+                    <area shape="circle" coords="900,95,75" alt="Galatico Fountain of Youth" href="#fountain">
+                    <area shape="circle" coords="1175,200,200" alt="Crazy Fun Center" href="#crazyfun">
+                    <area shape="circle" coords="1100,500,200" alt="Space Force Challenger Course" href="#spaceforce">
+                    <area shape="circle" coords="1250,800,125" alt="Escaping Black Hole" href="#blackhole">
+                    
+                    
+                    <area shape="rect" coords="200,150,450,300" alt="A Day in Latin America" href="#latin">
+                    <area shape="rect" coords="375,45,540,130" alt="European Quick n Easy" href="#european">
+                    <area shape="rect" coords="700,0,800,150" alt="American Classic" href="#america">
+                    
+                    <area shape="circle" coords="875,225,75" alt="Cosmo Gift Central" href="#gift">
+                </map>
             </div>
 
             <div class="column" id="About">
@@ -43,66 +62,274 @@
         <div id="Rides">
             <p>RIDES</p>
 
-            <!-- Trying Bootstrap Carousel plugin -->
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+              </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="la.jpg" alt="Los Angeles">
-                        <p>Los Angeles</p>
-                    </div>
-
-                    <div class="item">
-                        <img src="chicago.jpg" alt="Chicago">
-                        <p>Chicago</p>
-                    </div>
-
-                    <div class="item">
-                        <img src="ny.jpg" alt="New York">
-                        <p>New York</p>
-                    </div>
-
-                    
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#duck"><img src="Images/space_duck.jpg" width= "750" height= "350" alt="Space Duck Slide"></a>
+                  <div class="carousel-caption">
+                    <h3>Space Duck Slide</h3>
+                  </div>
                 </div>
 
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="item">
+                  <a href="#space8"><img src="Images/space_swirl.jpg" width= "750" height= "500" alt="Space 8 Swirl"></a>
+                  <div class="carousel-caption">
+                    <h3>Space 8 Swirl</h3>
+                  </div>
+                </div>
 
+                <div class="item">
+                  <a href="#sand"><img src="Images/sand_pit.jpg" width= "750" height= "500" alt="Star Dust Sand Pit"></a>
+                  <div class="carousel-caption">
+                    <h3>Star Dust Sand Pit</h3>
+                  </div>
+                </div>
+                  
+                <div class="item active">
+                    <a href="#cruise"><img src="Images/space_cruise.jpg" width= "750" height= "500" alt="Space Cruise Havana"></a>
+                  <div class="carousel-caption">
+                    <h3>Space Cruise Havana</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <a href="#fountain"><img src="Images/fountain.jpg" width= "750" height= "500" alt="Galatico Fountain of Youth"></a>
+                  <div class="carousel-caption">
+                    <h3>Galatico Fountain of Youth</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <a href="#crazyfun"><img src="Images/crazyfun.jpg" width= "750" height= "500" alt="Crazy Fun Center"></a>
+                  <div class="carousel-caption">
+                    <h3>Crazy Fun Center</h3>
+                  </div>
+                </div>
+                  
+                <div class="item active">
+                    <a href="#spaceforce"><img src="Images/spaceforce.jpg" width= "750" height= "500" alt="Space Force Challenger Course"></a>
+                  <div class="carousel-caption">
+                    <h3>Space Force Challenger Course</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <a href="#blackhole"><img src="Images/blackhole.jpg" width= "750" height= "500" alt="Escaping Black Hole"></a>
+                  <div class="carousel-caption">
+                    <h3>Escaping Black Hole</h3>
+                  </div>
+                </div>
+                  
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
+            
+            <div>
+                <div id="duck">
+                    <div class="dropdown">
+                        <button class="question">Space Duck Slide</button>
+                        <div class="answer">
+                            <p>You can dasda tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="space8">
+                    <div class="dropdown">
+                        <button class="question">Space 8 Swirl</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="sand">
+                    <div class="dropdown">
+                        <button class="question">Star Dust Sand Pit</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cruise">
+                    <div class="dropdown">
+                        <button class="question">Space Cruise Havana</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="fountain">
+                    <div class="dropdown">
+                        <button class="question">Galatico Fountain of Youth</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="crazyfun">
+                    <div class="dropdown">
+                        <button class="question">Crazy Fun Center</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="spaceforce">
+                    <div class="dropdown">
+                        <button class="question">Space Force Challenger Course</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="blackhole">
+                    <div class="dropdown">
+                        <button class="question">Escaping Black Hole</button>
+                        <div class="answer">
+                            <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>               
         </div>
 
         <div id="GiftShop">
             <p>GIFT SHOPS</p>
+            <div id="giftCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#giftCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#giftCarousel" data-slide-to="1"></li>
+              </ol>
 
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img>
-                    <p>Description</p>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#gift"><img src="Images/gift.jpg" width= "750" height= "350" alt="Gift Shop"></a>
+                  <div class="carousel-caption">
+                    <h3>Space Duck Slide</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <a href="#space8"><img src="Images/space_swirl.jpg" width= "750" height= "500" alt="Space 8 Swirl"></a>
+                  <div class="carousel-caption">
+                    <h3>Space 8 Swirl</h3>
+                  </div>
+                </div>
+                  
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#giftCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#giftCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            
+            <div id="gift">
+                <div class="dropdown">
+                    <button class="question">Cosmo Gift Central</button>
+                    <div class="answer">
+                        <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="Restaurants">
             <p>GRAB A BITE AT OUR CAFES AND RESTAURANTS</p>
+            <div id="restaurantCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#restaurantCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#restaurantCarousel" data-slide-to="1"></li>
+                <li data-target="#restaurantCarousel" data-slide-to="2"></li>
+              </ol>
 
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img>
-                    <p>Description</p>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#latin"><img src="Images/latin.jpg" width= "750" height= "350" alt="A Day in Latin America"></a>
+                  <div class="carousel-caption">
+                    <h3>A Day in Latin America</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <a href="#european"><img src="Images/european.jpg" width= "750" height= "500" alt="European Quick n Easy"></a>
+                  <div class="carousel-caption">
+                    <h3>European Quick n Easy</h3>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <a href="#america"><img src="Images/american.jpg" width= "750" height= "500" alt="American Classic"></a>
+                  <div class="carousel-caption">
+                    <h3>American Classic</h3>
+                  </div>
+                </div>
+                  
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#restaurantCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#restaurantCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            
+            <div id="latin">
+                <div class="dropdown">
+                    <button class="question">A Day in Latin America</button>
+                    <div class="answer">
+                        <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="european">
+                <div class="dropdown">
+                    <button class="question">European Quick n Easy</button>
+                    <div class="answer">
+                        <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="america">
+                <div class="dropdown">
+                    <button class="question">American Classic</button>
+                    <div class="answer">
+                        <p>You can purchase tickets online through our website or visit our ticket counter at the park.</p>
+                    </div>
                 </div>
             </div>
         </div>
