@@ -83,6 +83,15 @@ transform: translate(-150%,-50%);
   flex-direction: column;
 }
 
+.onethird-width {
+  float:left; 
+  width:30%;
+  min-width: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .ticket-info {
   padding: 20px;
   background-color: #474F7A;
