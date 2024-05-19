@@ -9,7 +9,7 @@ body {
         font-family: Gill Sans, sans-serif;
         margin: 0;
         padding: 0;
-        background-image: url(Images/starrybg2.jpeg);
+        background-image: url(../Images/starrybg2.jpeg);
         color: #91befa;
         display: flex;
         flex-direction: column;
