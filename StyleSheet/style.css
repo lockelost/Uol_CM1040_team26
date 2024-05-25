@@ -1,8 +1,4 @@
-/* Add wireframe border to the DIVs that does not have ID */
-div:not([id]) {
-  /* Your desired styles here */
-  border: 1px solid black;
-}
+
 
 body {
   font-family: Gill Sans, sans-serif;
