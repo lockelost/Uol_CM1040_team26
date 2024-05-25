@@ -38,6 +38,11 @@ h3 {
 }
 
 /* Main Content Styles */
+.container_img {
+  width: 100%; /* or any custom size */
+  height: 100%; 
+  object-fit: contain;
+}
 
 .container {
   position: relative;
