@@ -1,14 +1,168 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Homepage</title>
     <meta name="description" content="Homepage of Spy amusement park">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="StyleSheet/style.css">
-    <script src="index.js" async="" defer=""></script>
-    
-</head>
+    <style>
+        body {
+            font-family: Gill Sans, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            background-image: url('Images/starrybg2.jpeg');
+            color: #91befa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
+        h3 {
+            margin-top: 0;
+        }
+
+        #navbar {
+            background-color: #3B3B6D;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #homelogo img {
+            height: 50px;
+        }
+
+        #nav-links a {
+            color: #91befa;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .container_img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        #content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .onethird-width {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+
+        .half-width {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+
+        .third-width {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+
+        .ticket-info {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .addressandparking, .timings, .contact, .icons {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .faqs {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .site-footer {
+            background-color: #3B3B6D;
+            color: #91befa;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        .site-footer p {
+            margin: 0;
+        }
+
+        .question {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            background-color: #3B3B6D;
+            color: #91befa;
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #0f051c;
+        }
+
+        .answer.show {
+            display: block;
+        }
+
+        .icons img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .icons p {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: calc(100% - 70px);
+        }
+    </style>
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            answer.classList.toggle('show');
+        }
+    </script>
+</head>
 <body>
     <nav id="navbar">
         <div id="homelogo">
@@ -16,15 +170,13 @@
                 <img src="Images/parklogo.PNG" alt="Home Logo">
             </a>
         </div>
-
         <div id="nav-links">
             <a href="park.html">Park Information</a>
             <a href="tickets.html">Tickets</a>
         </div>
     </nav>
-
     <div id="content">
-        <div class="flex-container">
+        <div class="flex-container promo-section">
             <div class="onethird-width">
                 <div class="ticket-info">
                     <div class="single-price ticket-section">
@@ -32,7 +184,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="onethird-width">
                 <div class="ticket-info">
                     <div class="single-price ticket-section">
@@ -40,7 +191,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="onethird-width">
                 <div class="ticket-info">
                     <div class="group-price ticket-section">
@@ -50,103 +200,76 @@
             </div>
         </div>
 
-        <div class="section">
-            <!--maybe planning to visit be part of the nav next to ticket, with a drop down calender, ticket quantity and book now or add to cart? jeff-->
-            <h2 class="index">Planning to visit?</h2>
-
-            <div class="flex-container">
+        <div class="flex-container map-info-section">
+            <div class="half-width">
+                <h2 class="index">Planning to visit?</h2>
                 <img id="map" src="Images/location.jpg" class="container_img" alt="Map layout">
             </div>
-            
-            
-            <div class="addressandparking">
-                <h3 class="addressandparking">Address</h3>
-                <address class="addressandparking">
+            <div class="half-width addressandparking">
+                <h3>Address</h3>
+                <address>
                     Horizon City<br>
                     Bando, Ibaraki 306-0504<br>
                     Japan<br>
                 </address>
-                
-                <h3 class="addressandparking">Parking</h3>
-                <address class="addressandparking">
-                Upon your arrival, you will be directed to the parking lot of the park. Please note that the Event Horizon car park is a <b>paid</b> facility<br>
+                <h3>Parking</h3>
+                <address>
+                    Upon your arrival, you will be directed to the parking lot of the park. Please note that the Event Horizon car park is a <b>paid</b> facility<br>
                 </address>
-                   
             </div>
+        </div>
 
-
-            <!-- Maybe this part can goes with park info page? Jeff-->
-            <div class="icons">
-                <h3 class="icons">Additional imformation</h3>
-
+        <div class="flex-container additional-info-section">
+            <div class="third-width icons">
+                <h3>Additional Information</h3>
                 <img class="icons" src="Images/atmicon.png" alt="ATM">
-                <p class="icons">
-                    Wanna withdraw some quick cash? Use our on-site ATMs for those last minute expenditure! 
-                </p>
-                
+                <p>Need some quick cash? Use our on-site ATMs for your convenience!</p>
                 <img class="icons" src="Images/medicalicon.png" alt="Medical">
-                <p class="icons">
-                    Your safety and security is our top most priority, that's why we have readily available medical teams present all over the park to ensure your safety throughout your visit! 
-                </p>
-                
+                <p>Your safety is our priority! We have medical teams available throughout the park to ensure your well-being.</p>
                 <img class="icons" src="Images/accessibilityicon.png" alt="Accessibility">
-                <p class="icons">
-                    Event Horizon strives to make our park easily accessible for all our guests. Please call us in advance to make all the necessary arrangements to your trip smooth sailing!
-                </p>
-                
+                <p>Event Horizon is committed to accessibility for all guests. Contact us in advance for any special arrangements.</p>
             </div>
-            <!-- maybe this part goes with ticket page? Jeff-->
-            <div class="timings">
-                <h3 class="timings">Timings</h3>
-                <p class="timings">Weekdays (Monday to Friday): 10am - 5pm</p>
-                <p class="timings">Weekends (Saturday & Sunday): 10am - 5pm</p>
+            <div class="third-width timings">
+                <h3>Timings</h3>
+                <p>Weekdays (Monday to Friday): 10am - 5pm</p>
+                <p>Weekends (Saturday & Sunday): 10am - 5pm</p>
             </div>
-            <!-- jeff I am thinking to replace atm, medical, timings, etc with highlights of signature rides, img and description, and link them to park info page?-->
+            <div class="third-width contact">
+                <h3>Reach out to us!</h3>
+                <p>For general inquiries, please contact us via email: queries@eventhorizonpark.com</p>
+            </div>
+        </div>
 
-            <div class="contact">
-                <h3 class="contact">Reach out to us!</h3>
-                <p class="contact">For general enquires please contact us on our email: queries@eventhorizonpark.com</p>
-            </div>
-
-            <div class="faqs">
-                <h3 class="faqs">FAQs</h3>
-                <div class="dropdown">
-                        <button class="question">What security measures are put in place?</button>
-                        <div class="answer">
-                            <p>At the entrance, we check all bagagges and purses that enter our park, along with having multiple on-site medical staff</p>
-                        </div>
-                </div>
-                
-                <div class="dropdown">
-                        <button class="question">Is there refund policy?</button>
-                        <div class="answer">
-                            <p>If you booked your tickets online or in advance, you can avail of a 50% discount on the the total amount you paid if you cancel 48 hours in advance. However, if you cancel after the 48 hour period, than the total amount is non-refundable</p>
-                        </div>
-                </div>
-                
-                 <div class="dropdown">
-                        <button class="question">What time do the rides open?</button>
-                        <div class="answer">
-                            <p>All rides are open for as long as the park is open, however, our waiting lines close 15 minutes before the park closes</p>
-                        </div>
-                </div>
-                
-                <div class="dropdown">
-                        <button class="question">Do children need to be accompanied by parents or adults on all rides?</button>
-                        <div class="answer">
-                            <p>Yes, most rides will require a parent or relative over 18 to accompany them on rides. However if under 90cm, than rides such as Carrousel and Ferris Wheel are the only accessible ones in the presence of an adult</p>
-                        </div>
+        <div class="faqs">
+            <h3>FAQs</h3>
+            <div class="dropdown">
+                <button class="question" onclick="toggleAnswer(this)">What security measures are put in place?</button>
+                <div class="answer">
+                    <p>At the entrance, we conduct security checks on all belongings and have multiple on-site medical staff available.</p>
                 </div>
             </div>
-
+            <div class="dropdown">
+                <button class="question" onclick="toggleAnswer(this)">Is there a refund policy?</button>
+                <div class="answer">
+                    <p>If you cancel your tickets 48 hours in advance, you can avail of a 50% refund. However, cancellations made after that period are non-refundable.</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="question" onclick="toggleAnswer(this)">What time do the rides open?</button>
+                <div class="answer">
+                    <p>All rides are operational during park hours. Please note that waiting lines close 15 minutes before the park's closing time.</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="question" onclick="toggleAnswer(this)">Do children need to be accompanied by adults on all rides?</button>
+                <div class="answer">
+                    <p>Yes, most rides require adult accompaniment for children. However, children under 90cm can access rides like the Carrousel and Ferris Wheel with an adult.</p>
+                </div>
+            </div>
         </div>
     </div>
-
-
     <footer class="site-footer">
         <p>&copy; 2024 Space Theme Park. All rights reserved.</p>
     </footer>
-
-
-</body></html>
-
+</body>
+</html>
