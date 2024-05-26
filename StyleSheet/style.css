@@ -1,5 +1,3 @@
-
-
 body {
   font-family: Gill Sans, sans-serif;
   font-size: 16px;
@@ -39,8 +37,8 @@ h3 {
 
 /* Main Content Styles */
 .container_img {
-  width: 100%; /* or any custom size */
-  height: 100%; 
+  width: 100%;
+  height: auto; 
   object-fit: contain;
 }
 
@@ -88,6 +86,12 @@ h3 {
   justify-content: space-between;
 }
 
+.onethird-width {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
 .half-width {
   flex: 1;
   min-width: 300px;
@@ -96,14 +100,28 @@ h3 {
   flex-direction: column;
 }
 
+.third-width {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
 .ticket-info {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.addressandparking, .timings, .contact, .icons {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 table {
@@ -130,9 +148,17 @@ td {
   border-radius: 5px;
 }
 
+
+.faqs {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
 .site-footer {
   background-color: #3B3B6D;
-  font-family: Gill Sans, sans-serif;
   color: #91befa;
   text-align: center;
   padding: 20px;
@@ -232,4 +258,17 @@ td {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.icons p {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 70px);
 }
