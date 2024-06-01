@@ -91,7 +91,7 @@
             </div>
           </div>
 
-          <div class="item active">
+          <div class="item">
             <div class="img-wrapper"><a href="#carousel"><img src="Images/carousel.png" alt="Supernova Carousel"></a>
             </div>
             <div class="carousel-caption">
@@ -115,7 +115,7 @@
             </div>
           </div>
 
-          <div class="item active">
+          <div class="item">
             <div class="img-wrapper"><a href="#waterride"><img src="Images/millersplanet.jpeg"
                   alt="Miller's Planet Water Ride"></a></div>
             <div class="carousel-caption">
@@ -145,7 +145,7 @@
       <div>
         <div id="bumpercarts">
           <div class="dropdown">
-            <button class="question">Asteroid Belt Bumpercarts</button>
+            <button class="question" onclick="toggleAnswer(this)">Asteroid Belt Bumpercarts</button>
             <div class="answer">
               <p>A classic ride, guaranteed fun for the whole family!</p>
               <p>Minimum height 100cm</p>
@@ -155,7 +155,7 @@
         </div>
         <div id="ferriswheel">
           <div class="dropdown">
-            <button class="question">Wormhole Ferris Wheel</button>
+            <button class="question" onclick="toggleAnswer(this)">Wormhole Ferris Wheel</button>
             <div class="answer">
               <p>Kick back and relax in our relaxing while you enjoy a birds eye view at the entire park! </p>
               <p>No minimum height</p>
@@ -166,7 +166,7 @@
         </div>
         <div id="rollercoaster">
           <div class="dropdown">
-            <button class="question">Cosmic Ray Roller Coaster</button>
+            <button class="question" onclick="toggleAnswer(this)">Cosmic Ray Roller Coaster</button>
             <div class="answer">
               <p>Get your healthy dose of adrenaline rush with our coaster, reaching speeds of almost 60 mph!</p>
               <p>Minimum height of 140 cm</p>
@@ -176,7 +176,7 @@
         </div>
         <div id="carousel">
           <div class="dropdown">
-            <button class="question">Supernova Carousel</button>
+            <button class="question" onclick="toggleAnswer(this)">Supernova Carousel</button>
             <div class="answer">
               <p>Go for a spin with you kiddies in this fun little carousel </p>
               <p>Minimum height 100cm</p>
@@ -186,7 +186,7 @@
         </div>
         <div id="simulator">
           <div class="dropdown">
-            <button class="question">0 Gravity Simulator</button>
+            <button class="question" onclick="toggleAnswer(this)">0 Gravity Simulator</button>
             <div class="answer">
               <p>Soar in the air with our indoor skydiving that comes close to the true 0 gravity experience!</p>
               <p>Minimum height 120cm</p>
@@ -196,7 +196,7 @@
         </div>
         <div id="planetarium">
           <div class="dropdown">
-            <button class="question">Planetarium</button>
+            <button class="question" onclick="toggleAnswer(this)">Planetarium</button>
             <div class="answer">
               <p>Explore the enigmatic and fascinating beauty of space in our brand new Planetarium!</p>
               <p>No minimum height</p>
@@ -206,7 +206,7 @@
         </div>
         <div id="waterride">
           <div class="dropdown">
-            <button class="question">Miller's Planet Water Ride</button>
+            <button class="question" onclick="toggleAnswer(this)">Miller's Planet Water Ride</button>
             <div class="answer">
               <p>Dive into the treacherous waves of Miller's planet as you immerse yourself in the world of Interstellar
                 with our water ride! </p>
@@ -215,7 +215,7 @@
         </div>
         <div id="boothgames">
           <div class="dropdown">
-            <button class="question">Booth Games</button>
+            <button class="question" onclick="toggleAnswer(this)">Booth Games</button>
             <div class="answer">
               <p>Up for a game or 2? Don't miss out on our space themed carnie games, fun for any and all ages!</p>
             </div>
@@ -285,7 +285,7 @@
 
       <div id="milkyway">
         <div class="dropdown">
-          <button class="question">Milky Way Gift Shop</button>
+          <button class="question" onclick="toggleAnswer(this)">Milky Way Gift Shop</button>
           <div class="answer">
             <p>Take a quick pit stop at our very own Galaxy's shop for some space essentials like clothes, foods and
               snack local to our world!</p>
@@ -295,7 +295,7 @@
 
       <div id="andromeda">
         <div class="dropdown">
-          <button class="question">Andromeda Gift Shop</button>
+          <button class="question" onclick="toggleAnswer(this)">Andromeda Gift Shop</button>
           <div class="answer">
             <p>Pay a visit to our friendly neighbouring galaxy, Andromeda! Here you can shop for all your favourite
               rides' merch like Astroid Belt Bumper carts and Wormhole Ferris Wheel and even snacks!</p>
@@ -305,7 +305,7 @@
 
       <div id="fireworks">
         <div class="dropdown">
-          <button class="question">Fireworks Gift Shop</button>
+          <button class="question" onclick="toggleAnswer(this)">Fireworks Gift Shop</button>
           <div class="answer">
             <p>Explore the Fireworks Galaxy, named after expriencing 10 supernovae within its own perimeter!
               Unsuprisingly, you can find some merch from Supernova Carousel, alongside The Planetarium and Cosmic, from
@@ -316,7 +316,7 @@
 
       <div id="sombrero">
         <div class="dropdown">
-          <button class="question">Sombrero Gift Shop</button>
+          <button class="question" onclick="toggleAnswer(this)">Sombrero Gift Shop</button>
           <div class="answer">
             <p>Welcome to Sombero Galaxy! Where stars encircle the centre of this galaxy, forming a majestic ring around
               it! Find some limited edition merchandise for all our rides, along with some exclusive one of a kind merch
@@ -382,7 +382,7 @@
 
       <div id="halleysdinner">
         <div class="dropdown">
-          <button class="question">Halley's Diner</button>
+          <button class="question" onclick="toggleAnswer(this)">Halley's Diner</button>
           <div class="answer">
             <p>An old-school retro dinner with a fun astronomical twist!</p>
             <p>Cuisine: American, Fast food </p>
@@ -393,7 +393,7 @@
       </div>
       <div id="stardustrestaurant">
         <div class="dropdown">
-          <button class="question">Stardust Delicacies</button>
+          <button class="question" onclick="toggleAnswer(this)">Stardust Delicacies</button>
           <div class="answer">
             <p>Ever wondered what it was like to eat among the stars? Well, wonder no more because our fine dining
               restaurant is set amidst a captivating backdrop of outerspace!</p>
@@ -405,7 +405,7 @@
       </div>
       <div id="cosmiccafe">
         <div class="dropdown">
-          <button class="question">Cosmic Cafe</button>
+          <button class="question" onclick="toggleAnswer(this)">Cosmic Cafe</button>
           <div class="answer">
             <p>A cozy futuristic cafe straight out of a sci-fi adventure! Full of scrumptious snacks and drinks for you
               to choose from, whether lounging around in our cafe, or for you to have on the go</p>
