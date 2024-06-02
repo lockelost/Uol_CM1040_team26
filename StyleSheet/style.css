@@ -232,7 +232,10 @@ td {
 /* Dropdown Styles */
 .dropdown {
   display: inline-block;
+  position: relative;
   margin-bottom: 10px;
+  width: 100%;
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -352,5 +355,4 @@ Styles For Image Map
   padding: 0;
   list-style: none;
 }
-
 
