@@ -368,3 +368,18 @@ Styles For Image Map
   list-style: none;
 }
 
+.avatar {
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+.profile {
+  text-align: center;
+  margin: 0 10px;
+}
