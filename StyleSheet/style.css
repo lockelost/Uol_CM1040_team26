@@ -242,8 +242,12 @@ td {
   background-color: #3B3B6D;
   color: #91befa;
   margin-bottom: 10px;
+  transition: background-color 0.2s ease-out 100ms
 }
 
+.question:hover {
+  background-color: #2a2a4f;
+}
 .answer {
   padding: 0 18px;
   display: none;
