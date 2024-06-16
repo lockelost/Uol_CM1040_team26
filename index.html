@@ -7,7 +7,15 @@
     <title>Homepage</title>
     <meta name="description" content="Homepage of Spy amusement park">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="StyleSheet/style.css">
+    
+    <link rel="stylesheet" href="StyleSheet/bootstrap.min.css">
+  <link rel="stylesheet" href="StyleSheet/style.css">
+    
+  <link href="https://fonts.cdnfonts.com/css/space-theme?styles=116355" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <script src="script/jquery.min.js"></script>
     <script src="script/bootstrap.min.js"></script>
     <script src="script/index.js"></script>
@@ -27,32 +35,28 @@
     </nav>
     <div id="content">
         <div class="flex-container promo-section">
-            <div class="onethird-width">
-                <div class="ticket-info">
+<!--
+            Sources: 
+            https://www.youtube.com/watch?v=mQEUDLrahp4&t=8s
+            https://www.youtube.com/watch?v=Ts0Pvc4WNpQ
+            https://www.facebook.com/klfoodie/videos/new-coolest-space-themed-restaurant-in-kl/3988389288054883/
+            https://www.youtube.com/watch?v=0fHd4EnBawg
+-->
+            
+                <div class="promo">
                     <div class="single-price ticket-section">
-                        <h3>Promotion 1</h3>
+                        <video width="100%" height="100%" loop autoplay muted>
+                            <source src="Video/promovideo.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
-            </div>
-            <div class="onethird-width">
-                <div class="ticket-info">
-                    <div class="single-price ticket-section">
-                        <h3>Promotion 2</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="onethird-width">
-                <div class="ticket-info">
-                    <div class="group-price ticket-section">
-                        <h3>Promotion 3</h3>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
+        <h1 class="index">PLANNING TO VISIT?</h1>
+        
         <div class="flex-container map-info-section">
             <div class="half-width">
-                <h2 class="index">Planning to visit?</h2>
                 <img id="map" src="Images/location.jpg" class="container_img" alt="Map layout">
             </div>
             <div class="half-width addressandparking">
