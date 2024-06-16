@@ -1,5 +1,7 @@
 body {
-  font-family: Gill Sans, sans-serif;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -15,8 +17,15 @@ body {
   min-height: 100vh;
 }
 
-h3 {
-  margin-top: 0;
+
+h1 {
+    font-family: 'Space Theme', sans-serif;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 100);
+}
+
+h2 {
+    font-family: 'Space Theme', sans-serif;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 100);
 }
 
 /* Header Styles */
@@ -144,6 +153,16 @@ h3 {
   padding: 20px;
 }
 
+.promo {
+  padding: 0.5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .ticket-info {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -154,9 +173,17 @@ h3 {
   flex-direction: column;
 }
 
-.addressandparking, .timings, .contact, .icons {
+.addressandparking, .timings, .contact {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.icons {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -204,7 +231,7 @@ td {
 }
 
 .site-footer p {
-  font-family: Gill Sans, sans-serif;
+  font-family: "Space Mono", monospace;
   margin: 0;
 }
 
@@ -338,7 +365,7 @@ Styles For Image Map
 /* Relative positioning*/
 #image-map {
   position: relative;
-  margin: 150px auto 20px auto;
+  margin: 20px auto 20px auto;
 }
 
 /* Hide the original tooltips contents */
