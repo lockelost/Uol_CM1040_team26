@@ -17,14 +17,26 @@ body {
   min-height: 100vh;
 }
 
+/* This font is free of use according to Google, 'https://fonts.google.com/specimen/Space+Mono/about' */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../fonts/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('../fonts/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
 
 h1 {
-    font-family: 'Space Theme', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     text-shadow:  0 5px 10px rgba(0, 0, 0, 100);
 }
 
 h2 {
-    font-family: 'Space Theme', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     text-shadow:  0 5px 10px rgba(0, 0, 0, 100);
 }
 
