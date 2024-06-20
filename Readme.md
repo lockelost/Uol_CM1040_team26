@@ -38,7 +38,7 @@ Our team collaboration helped solidify our knowledge and improve our web develop
 
 The following prompt was used to generate the images for 'Event Horizon' space-themed amusement park:
 
-generate a picture of a space themed theme park
+generate pictures for a space themed theme park
 Rides:
 
 Asteroid Belt Bumpercarts
