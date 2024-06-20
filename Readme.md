@@ -31,3 +31,35 @@ Through this project, we had the opportunity to:
 - Gain practical experience with external libraries like Bootstrap and jQuery.
 
 Our team collaboration helped solidify our knowledge and improve our web development skills.
+
+
+
+### Prompt Used for generating images
+
+The following prompt was used to generate the images for 'Event Horizon' space-themed amusement park:
+
+generate a picture of a space themed theme park
+Rides:
+
+Asteroid Belt Bumpercarts
+Wormhole Ferris Wheel
+Cosmic Ray Roller Coaster
+Supernova Carouse;
+0 Gravity Simulator
+Planetarium
+Miller's Planet Water Ride
+Booth Games
+
+Gift Shops:
+Milky Way Gift Shop
+Andromeda Gift Shop
+Fireworks Gift Shop
+Sombrero Gift Shop
+
+
+Food court:
+Halley's Diner
+Startdust Delicacies
+Cosmic Café
+
+generate images for each of these please
