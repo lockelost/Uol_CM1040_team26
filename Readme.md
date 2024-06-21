@@ -38,28 +38,33 @@ Our team collaboration helped solidify our knowledge and improve our web develop
 
 The following prompt was used to generate the images for 'Event Horizon' space-themed amusement park:
 
-generate pictures for a space themed theme park
+```
+generate pictures for a space themed theme park 
+
 Rides:
 
-Asteroid Belt Bumpercarts
-Wormhole Ferris Wheel
-Cosmic Ray Roller Coaster
-Supernova Carouse;
-0 Gravity Simulator
-Planetarium
-Miller's Planet Water Ride
-Booth Games
+- Asteroid Belt Bumpercarts
+- Wormhole Ferris Wheel
+- Cosmic Ray Roller Coaster
+- Supernova Carouse;
+- 0 Gravity Simulator
+- Planetarium
+- Miller's Planet Water Ride
+- Booth Games
 
 Gift Shops:
-Milky Way Gift Shop
-Andromeda Gift Shop
-Fireworks Gift Shop
-Sombrero Gift Shop
+
+- Milky Way Gift Shop
+- Andromeda Gift Shop
+- Fireworks Gift Shop
+- Sombrero Gift Shop
 
 
 Food court:
-Halley's Diner
-Startdust Delicacies
-Cosmic Café
+
+- Halley's Diner
+- Startdust Delicacies
+- Cosmic Café
 
 generate images for each of these please
+```
