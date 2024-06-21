@@ -20,13 +20,13 @@ body {
 /* This font is free of use according to Google, 'https://fonts.google.com/specimen/Space+Mono/about' */
 @font-face {
   font-family: 'Space Mono';
-  src: url('../fonts/SpaceMono-Regular.ttf') format('truetype');
+  src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Space Mono';
-  src: url('../fonts/SpaceMono-Bold.ttf') format('truetype');
+  src: url('../fonts/Space_Mono/SpaceMono-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 

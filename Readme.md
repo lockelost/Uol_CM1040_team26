@@ -1,5 +1,18 @@
 # Theme Park Website Project
 
+## Event Horizon Park
+
+Event Horizon Park was born out of an idea to create an amuzement park dedicated to the wonders of space and beyond
+
+In late 2022, we decided to make our dreams into a reality when our plans were greenlit and construction began for our park
+
+By late 2023, our vision was complete and so opened EVENT HORIZON PARK, a place where families can go on astronomical adventures while learning all about the enigmas of Outerspace
+
+So, what are you waiting for?
+
+Book your tickets today and reach for the stars!
+
+
 ## 1. About the Website
 This website is dedicated to an imaginary theme park with a space adventure theme. It includes three main pages:
 
@@ -33,6 +46,24 @@ Through this project, we had the opportunity to:
 Our team collaboration helped solidify our knowledge and improve our web development skills.
 
 
+# Points of interest
+
+- We integrated the Bootstrap JS library to implement an Image Carousel effect, going beyond basic HTML and CSS. This allowed us to learn and apply JavaScript effectively.
+
+    (We understand using JS does not count, but it was beneficial for us to learn it.)
+
+- We used/referenced the JavsScript effect to display tooltips at specific pixel locations on an image, enhancing user interaction.
+
+- Our theme of a space exploration  theme park involved detailed discussion to create a realistic and engaging story and park features.
+
+- We utilized a wide range of CSS effects covered in the course, ensuing a comprehensive application of our learning.
+
+- Team member Allysha did original artworks, and Vijay used Chat Gpt for generating various park images.
+
+- We managed our work by using [Github](https://github.com/lockelost/Uol_CM1040_team26)
+
+
+# Etc.
 
 ### Prompt Used for generating images
 
