@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: "darkblue";
+  background-color: darkblue;
   color: #91befa;
   display: flex;
   flex-direction: column;
