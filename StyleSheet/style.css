@@ -131,7 +131,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .onethird-width {
@@ -155,14 +155,25 @@ h2 {
 }
 
 .carousal-left-section {
-  flex: 1 0 70%;
+  flex: 0 0 70%;
   padding: 20px;
 }
 
 .carousal-right-section {
-  flex: 1 0 30%;
+  flex: 0 0 30%;
   width: 400px;
   padding: 20px;
+}
+
+@media (max-width: 860px) {
+  .carousal-left-section, .carousal-right-section {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  .carousal-right-section {
+      order: 1; /* Ensure right column comes down */
+  }
 }
 
 .promo {
@@ -299,15 +310,18 @@ td {
 .question:hover {
   background-color: #2a2a4f;
 }
+
 .answer {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #0f051c;
+  max-width: 100%; /* Ensure it doesn't exceed parent width */
+  max-height: 100%; /* Ensure it doesn't exceed parent height */
 }
 
 .answer.show {
-  display: block;
+  display: inline-block;
   animation: fadeInAnimation ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -329,6 +343,10 @@ td {
   margin-bottom: 10px;
   width: 100%;
   display: inline-block;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden; /* Ensure any overflow is hidden */
 }
 
 .dropdown-content {
